@@ -868,6 +868,8 @@ en:
     contrast: High contrast
     default: Mastodon
     mastodon-light: Mastodon (light)
+    hacker: Hacker
+    steelblue: Steelblue
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

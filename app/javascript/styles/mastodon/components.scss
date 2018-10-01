@@ -5496,3 +5496,20 @@ noscript {
     }
   }
 }
+
+.conversation {
+  padding: 8px 10px;
+  border-bottom: 1px solid lighten($ui-base-color, 8%);
+  cursor: default;
+
+  &__names {
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  &__time {
+    font-size: 14px;
+    color: $darker-text-color;
+    margin-bottom: 8px;
+  }
+}

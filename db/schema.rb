@@ -130,6 +130,7 @@ ActiveRecord::Schema.define(version: 2018_09_29_222014) do
     t.bigint "account_id"
     t.bigint "conversation_id"
     t.bigint "participant_account_ids", default: [], null: false, array: true
+    t.bigint "status_ids", default: [], null: false, array: true
     t.bigint "last_status_id"
     t.index ["account_id", "conversation_id", "participant_account_ids"], name: "index_unique_conversations", unique: true
     t.index ["account_id"], name: "index_conversation_accounts_on_account_id"

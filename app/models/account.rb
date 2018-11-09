@@ -72,9 +72,9 @@ class Account < ApplicationRecord
   MENTION_RE    = %r{(?<![=/[:word:]])@((#{USERNAME_RE})(?:@[[:word:]]+([.-]+[[:word:]]+)*)?)}
   URL_PREFIX_RE = %r{\Ahttp(s?)://[^/]+}
   USERNAME_ONLY_RE = /\A#{USERNAME_RE}\z/i
-  USERNAME_LENGTH_LIMIT = 30
-  DISPLAY_NAME_LENGTH_LIMIT = 30
-  NOTE_LENGTH_LIMIT = 500
+  USERNAME_LENGTH_LIMIT = 60
+  DISPLAY_NAME_LENGTH_LIMIT = 60
+  NOTE_LENGTH_LIMIT = 1000
 
   AUTOMATED_ACTOR_TYPES = %w(Application Service).freeze
 

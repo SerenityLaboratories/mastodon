@@ -1,3 +1,7 @@
 default: styles/application.scss
 contrast: styles/contrast.scss
 mastodon-light: styles/mastodon-light.scss
+glitchy-witchy: styles/glitchy-witchy.scss
+synthwave: styles/synthwave.scss
+demogorgon: styles/demogorgon.scss
+chillstep: styles/chillstep.scss

@@ -1,0 +1,30 @@
+.character-counter, .icon-button.inverted, .text-icon-button {
+    color: $ui-glitchy-blue !important;
+}
+
+.status__display-name {
+    color: $ui-secondary-color !important;
+}
+.mention {
+    color: $ui-bright-color !important;
+}
+
+.notification__message > span {
+    color: $white !important;
+}
+
+.emoji-mart-anchors {
+    color: $ui-glitchy-blue;
+}
+
+.status__content__spoiler-link {
+    color: $inverted-text-color !important;
+}
+
+.compose-form .autosuggest-account .display-name__account {
+    color: $ui-glitchy-blue !important;
+}
+
+.compose-form .compose-form__warning a {
+    color: $ui-glitchy-blue !important;
+}

@@ -1,0 +1,29 @@
+// Dependent colors
+$black: #000000;
+$white: #ffffff;
+
+$classic-base-color: #a6abbb;
+$classic-primary-color: #f372e2;
+$classic-secondary-color: #011929;
+$classic-highlight-color: #e342f8;
+
+// Differences
+$success-green: #3c754d;
+
+$base-overlay-background: $white !default;
+$valid-value-color: $success-green !default;
+
+$ui-base-color: $classic-secondary-color !default;
+$ui-base-lighter-color: #4e7399;
+$ui-primary-color: #ff50a8;
+$ui-secondary-color: $classic-base-color !default;
+$ui-highlight-color: #ff2e62;
+
+$primary-text-color: $white !default;
+$darker-text-color: $classic-base-color !default;
+$dark-text-color: #a355b3;
+$action-button-color: #bd9ac4;
+
+$inverted-text-color: $black !default;
+$lighter-text-color: $classic-base-color !default;
+$light-text-color: #444b5d;

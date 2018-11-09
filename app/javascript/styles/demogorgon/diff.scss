@@ -1,0 +1,120 @@
+div.ui {
+  background: rgb(21,21,25);
+  background: url('../images/ashes.png'), linear-gradient(180deg, rgba(21,21,25,1) 17%, rgb(20, 38, 46) 44%, rgba(32,41,43,1) 74%, rgba(25,30,36,1) 100%);
+  background-blend-mode: soft-light, normal;
+  background-repeat: repeat, no-repeat;
+}
+
+div.ui {
+    animation-name: ASHES;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+.columns-area__panels {
+  background: rgb(21,21,25);
+  background: url('../images/ashes.png'), linear-gradient(180deg, rgba(21,21,25,1) 17%, rgb(20, 38, 46) 44%, rgba(32,41,43,1) 74%, rgba(25,30,36,1) 100%);
+  background-blend-mode: soft-light, normal;
+  background-repeat: repeat, no-repeat;
+}
+
+body.no-reduce-motion div.columns-area__panels {
+    animation-name: ASHES;
+    animation-duration: 120s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+.compose-panel {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+div[aria-label="Home"] {
+  padding: 0;
+  box-shadow: 0 0 10px darken($ui-highlight-color, 20%);
+}
+
+div[aria-label="Notifications"] {
+  padding: 0;
+  box-shadow: 0 0 10px darken($ui-highlight-color, 20%);
+}
+
+div[aria-label="Local timeline"] {
+  padding: 0;
+  box-shadow: 0 0 10px darken($ui-highlight-color, 20%);
+}
+
+div[aria-label="Federated timeline"] {
+  padding: 0;
+  box-shadow: 0 0 10px darken($ui-highlight-color, 20%);
+}
+
+div[aria-label="Direct messages"] {
+  padding: 0;
+  box-shadow: 0 0 10px darken($ui-highlight-color, 20%);
+}
+
+div[aria-label="Favourites"] {
+  padding: 0;
+  box-shadow: 0 0 10px darken($ui-highlight-color, 20%);
+}
+
+div[aria-label="List"] {
+  padding: 0;
+  box-shadow: 0 0 10px darken($ui-highlight-color, 20%);
+}
+
+.column-header {
+  font-family: "Benguiat", serif;
+  text-transform: uppercase;
+  font-size: 18pt;
+  color: $black;
+  text-shadow: 1px 1px 8px $ui-highlight-color;
+  -webkit-text-stroke: 0.02em $ui-highlight-color;
+}
+
+div.columns-area--mobile > div.column {
+  width: 95%;
+  height: 98%;
+}
+
+@media screen and (min-width: 631px) {
+  div[aria-label="Home"] {
+    margin: 10px;
+  }
+  
+  div[aria-label="Notifications"] {
+    margin: 10px;
+  }
+  
+  div[aria-label="Local timeline"] {
+    margin: 10px;
+  }
+  
+  div[aria-label="Federated timeline"] {
+    margin: 10px;
+  }
+  
+  div[aria-label="Direct messages"] {
+    margin: 10px;
+  }
+  
+  div[aria-label="Favourites"] {
+    margin: 10px;
+  }
+  
+  div[aria-label="List"] {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .column {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

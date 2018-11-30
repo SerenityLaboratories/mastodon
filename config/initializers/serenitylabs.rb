@@ -9,5 +9,9 @@ module Mastodon
     def flags
       'sl'
     end
+
+    def source_base_url
+      'https://github.com/serenitylaboratories/mastodon'
+    end
   end
 end

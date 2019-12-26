@@ -5,3 +5,9 @@ glitchy-witchy: styles/glitchy-witchy.scss
 synthwave: styles/synthwave.scss
 demogorgon: styles/demogorgon.scss
 chillstep: styles/chillstep.scss
+mastodon-autumn: styles/mastodon-autumn.scss
+mastodon-winter: styles/mastodon-winter.scss
+mastodon-spring: styles/mastodon-spring.scss
+mastodon-summer: styles/mastodon-summer.scss
+mastodon-black: styles/mastodon-black.scss
+

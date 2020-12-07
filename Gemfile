@@ -82,7 +82,7 @@ gem 'simple_form', '~> 4.1'
 gem 'sprockets-rails', '~> 3.2', require: 'sprockets/railtie'
 gem 'stoplight', '~> 2.1.3'
 gem 'strong_migrations', '~> 0.3'
-gem 'tty-command', '~> 0.8', require: false
+gem 'tty-command', '~> 0.9', require: false
 gem 'tty-prompt', '~> 0.18', require: false
 gem 'twitter-text', '~> 1.14'
 gem 'tzinfo-data', '~> 1.2018'

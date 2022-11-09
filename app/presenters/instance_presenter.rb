@@ -89,4 +89,8 @@ class InstancePresenter < ActiveModelSerializers::Model
   def mascot
     @mascot ||= Rails.cache.fetch('site_uploads/mascot') { SiteUpload.find_by(var: 'mascot') }
   end
+
+  def max_toot_chars
+    1000
+  end
 end

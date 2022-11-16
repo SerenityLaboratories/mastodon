@@ -76,7 +76,7 @@ class Account < ApplicationRecord
   USERNAME_ONLY_RE = /\A#{USERNAME_RE}\z/i
   USERNAME_LENGTH_LIMIT = 60
   DISPLAY_NAME_LENGTH_LIMIT = 60
-  NOTE_LENGTH_LIMIT = 1000
+  NOTE_LENGTH_LIMIT = 1500
 
   AUTOMATED_ACTOR_TYPES = %w(Application Service).freeze
 

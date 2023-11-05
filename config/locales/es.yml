@@ -301,7 +301,7 @@ es:
       new:
         create: Crear anuncio
         title: Nuevo anuncio
-      publish: Publicar
+      publish: Tootar
       published_msg: "¡Anuncio publicado con éxito!"
       scheduled_for: Programado para %{time}
       scheduled_msg: "¡Anuncio programado para su publicación!"

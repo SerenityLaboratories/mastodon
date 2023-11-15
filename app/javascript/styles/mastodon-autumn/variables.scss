@@ -1,5 +1,10 @@
 // Dependent colors
 $black: #000000;
+$white: #ffffff;
+$blurple-600: #c0512c;
+$blurple-500: #d65a31;
+$blurple-400: #da6a45;
+$blurple-300: #de7a5a;
 
 $classic-base-color: #222831;
 $classic-primary-color: #808080;
@@ -10,9 +15,19 @@ $ui-base-color: $classic-base-color !default;
 $ui-primary-color: $classic-primary-color !default;
 $ui-secondary-color: $classic-secondary-color !default;
 
+$ui-button-background-color: $blurple-500 !default;
+$ui-button-focus-background-color: $blurple-600 !default;
+$ui-button-focus-outline-color: $blurple-400 !default;
+$ui-button-focus-outline: solid 2px $ui-button-focus-outline-color !default;
+
+$ui-button-tertiary-color: $blurple-300 !default;
+$ui-button-tertiary-border-color: $blurple-300 !default;
+$ui-button-tertiary-focus-background-color: $blurple-600 !default;
+$ui-button-tertiary-focus-color: $white !default;
+
 // Differences
-$ui-highlight-color: #d65a31;
-$gold-star: #d65a31;
+$ui-highlight-color: $classic-highlight-color !default;
+$gold-star: $classic-highlight-color !default;
 
 $darker-text-color: lighten($ui-primary-color, 20%) !default;
 $dark-text-color: lighten($ui-primary-color, 12%) !default;

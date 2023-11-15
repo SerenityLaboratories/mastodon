@@ -1,11 +1,26 @@
 // Dependent colors
 $black: #000000;
 $white: #aaaaaa;
+$blurple-600: #b2d8cf;
+$blurple-500: #c6f1e7;
+$blurple-400: #d1f3eb;
+$blurple-300: #dcf6f0;
 
 $classic-base-color: #404040;
 $classic-primary-color: darken(#f0e89b, 10%);
 $classic-secondary-color: #ffeab2; //main color, background and shit
 $classic-highlight-color: #ff0000; //accent color
+
+$ui-button-color: $black !default;
+$ui-button-background-color: $blurple-500 !default;
+$ui-button-focus-background-color: $blurple-600 !default;
+$ui-button-focus-outline-color: $blurple-400 !default;
+$ui-button-focus-outline: solid 2px $ui-button-focus-outline-color !default;
+
+$ui-button-tertiary-color: $blurple-300 !default;
+$ui-button-tertiary-border-color: $blurple-300 !default;
+$ui-button-tertiary-focus-background-color: $blurple-600 !default;
+$ui-button-tertiary-focus-color: $white !default;
 
 // Differences
 $success-green: #029666;

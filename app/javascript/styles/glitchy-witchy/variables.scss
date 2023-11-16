@@ -5,6 +5,17 @@ $ui-glitchy-brightest: #f993fa;
 $ui-glitchy-purple: #f993fa;
 $ui-glitchy-blue: #5849ce;
 $ui-glitchy-pink: #ff42a0;
+$white: #ffffff;
+
+$ui-button-background-color: $ui-glitchy-pink !default;
+$ui-button-focus-background-color: darken($ui-glitchy-pink, 8%) !default;
+$ui-button-focus-outline-color: lighten($ui-glitchy-pink, 8%) !default;
+$ui-button-focus-outline: solid 2px $ui-button-focus-outline-color !default;
+
+$ui-button-tertiary-color: lighten($ui-glitchy-pink, 12%) !default;
+$ui-button-tertiary-border-color: lighten($ui-glitchy-pink, 12%) !default;
+$ui-button-tertiary-focus-background-color: darken($ui-glitchy-pink, 8%) !default;
+$ui-button-tertiary-focus-color: $white !default;
 
 $ui-base-color: $ui-glitchy-bg;
 $ui-base-lighter-color: $ui-glitchy-purple;

@@ -3104,7 +3104,7 @@ $ui-header-height: 55px;
 .column-back-button {
   box-sizing: border-box;
   width: 100%;
-  background: $ui-base-color;
+  background: lighten($ui-base-color, 4%);
   border-radius: 4px 4px 0 0;
   color: $highlight-text-color;
   cursor: pointer;
@@ -3112,7 +3112,6 @@ $ui-header-height: 55px;
   font-size: 16px;
   line-height: inherit;
   border: 0;
-  border-bottom: 1px solid lighten($ui-base-color, 8%);
   text-align: unset;
   padding: 15px;
   margin: 0;
@@ -3125,7 +3124,7 @@ $ui-header-height: 55px;
 }
 
 .column-header__back-button {
-  background: $ui-base-color;
+  background: lighten($ui-base-color, 4%);
   border: 0;
   font-family: inherit;
   color: $highlight-text-color;
@@ -3160,7 +3159,7 @@ $ui-header-height: 55px;
   padding: 15px;
   position: absolute;
   inset-inline-end: 0;
-  top: -50px;
+  top: -48px;
 }
 
 .react-toggle {
@@ -3903,8 +3902,7 @@ a.status-card {
 .column-header {
   display: flex;
   font-size: 16px;
-  background: $ui-base-color;
-  border-bottom: 1px solid lighten($ui-base-color, 8%);
+  background: lighten($ui-base-color, 4%);
   border-radius: 4px 4px 0 0;
   flex: 0 0 auto;
   cursor: pointer;
@@ -3962,7 +3960,7 @@ a.status-card {
 }
 
 .column-header__button {
-  background: $ui-base-color;
+  background: lighten($ui-base-color, 4%);
   border: 0;
   color: $darker-text-color;
   cursor: pointer;
@@ -3974,7 +3972,7 @@ a.status-card {
   }
 
   &:hover {
-    color: lighten($darker-text-color, 4%);
+    color: lighten($darker-text-color, 7%);
   }
 
   &:focus-visible {
@@ -3983,10 +3981,11 @@ a.status-card {
 
   &.active {
     color: $primary-text-color;
-    background: lighten($ui-base-color, 4%);
+    background: lighten($ui-base-color, 8%);
 
     &:hover {
       color: $primary-text-color;
+      background: lighten($ui-base-color, 8%);
     }
   }
 
@@ -4000,7 +3999,6 @@ a.status-card {
   max-height: 70vh;
   overflow: hidden;
   overflow-y: auto;
-  border-bottom: 1px solid lighten($ui-base-color, 8%);
   color: $darker-text-color;
   transition:
     max-height 150ms ease-in-out,
@@ -4022,13 +4020,13 @@ a.status-card {
     height: 0;
     background: transparent;
     border: 0;
-    border-top: 1px solid lighten($ui-base-color, 8%);
+    border-top: 1px solid lighten($ui-base-color, 12%);
     margin: 10px 0;
   }
 }
 
 .column-header__collapsible-inner {
-  background: $ui-base-color;
+  background: lighten($ui-base-color, 8%);
   padding: 15px;
 }
 
@@ -4448,13 +4446,17 @@ a.status-card {
   color: $white;
   margin-bottom: 4px;
   display: block;
-  background-color: rgba($black, 0.45);
-  backdrop-filter: blur(10px) saturate(180%) contrast(75%) brightness(70%);
-  font-size: 11px;
+  background-color: $base-overlay-background;
   text-transform: uppercase;
-  font-weight: 700;
-  padding: 2px 6px;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px;
   border-radius: 4px;
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .setting-toggle {
@@ -4514,7 +4516,6 @@ a.status-card {
 
 .follow_requests-unlocked_explanation {
   background: darken($ui-base-color, 4%);
-  border-bottom: 1px solid lighten($ui-base-color, 8%);
   contain: initial;
   flex-grow: 0;
 }
@@ -6218,7 +6219,6 @@ a.status-card {
   display: block;
   color: $white;
   background: rgba($black, 0.65);
-  backdrop-filter: blur(10px) saturate(180%) contrast(75%) brightness(70%);
   padding: 2px 6px;
   border-radius: 4px;
   font-size: 11px;
@@ -6879,6 +6879,24 @@ a.status-card {
       }
     }
   }
+
+  &.directory__section-headline {
+    background: darken($ui-base-color, 2%);
+    border-bottom-color: transparent;
+
+    a,
+    button {
+      &.active {
+        &::before {
+          display: none;
+        }
+
+        &::after {
+          border-color: transparent transparent darken($ui-base-color, 7%);
+        }
+      }
+    }
+  }
 }
 
 .filter-form {
@@ -7397,6 +7415,7 @@ noscript {
 
 .account__header {
   overflow: hidden;
+  background: lighten($ui-base-color, 4%);
 
   &.inactive {
     opacity: 0.5;
@@ -7418,7 +7437,6 @@ noscript {
     height: 145px;
     position: relative;
     background: darken($ui-base-color, 4%);
-    border-bottom: 1px solid lighten($ui-base-color, 8%);
 
     img {
       object-fit: cover;
@@ -7432,7 +7450,7 @@ noscript {
   &__bar {
     position: relative;
     padding: 0 20px;
-    border-bottom: 1px solid lighten($ui-base-color, 8%);
+    border-bottom: 1px solid lighten($ui-base-color, 12%);
 
     .avatar {
       display: block;
@@ -7441,7 +7459,7 @@ noscript {
 
       .account__avatar {
         background: darken($ui-base-color, 8%);
-        border: 2px solid $ui-base-color;
+        border: 2px solid lighten($ui-base-color, 4%);
       }
     }
   }

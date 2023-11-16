@@ -1,5 +1,10 @@
 // Dependent colors
 $black: #000000;
+$white: #ffffff;
+$blurple-500: #aaaaaa;
+$blurple-600: darken($blurple-500, 8%);
+$blurple-400: lighten($blurple-500, 8%);
+$blurple-300: lighten($blurple-500, 12%);
 
 $classic-base-color: #000000;
 $classic-primary-color: #888888;
@@ -9,6 +14,16 @@ $classic-highlight-color: #aaaaaa;
 $ui-base-color: $classic-base-color !default;
 $ui-primary-color: $classic-primary-color !default;
 $ui-secondary-color: $classic-secondary-color !default;
+
+$ui-button-background-color: $blurple-500 !default;
+$ui-button-focus-background-color: $blurple-600 !default;
+$ui-button-focus-outline-color: $blurple-400 !default;
+$ui-button-focus-outline: solid 2px $ui-button-focus-outline-color !default;
+
+$ui-button-tertiary-color: $blurple-300 !default;
+$ui-button-tertiary-border-color: $blurple-300 !default;
+$ui-button-tertiary-focus-background-color: $blurple-600 !default;
+$ui-button-tertiary-focus-color: $white !default;
 
 // Differences
 $gold-star: #aaaaaa;

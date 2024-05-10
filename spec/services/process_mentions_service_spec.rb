@@ -105,7 +105,7 @@ RSpec.describe ProcessMentionsService, type: :service do
 
     context 'with an IDN TLD' do
       let(:remote_user) { Fabricate(:account, username: 'foo', protocol: :activitypub, domain: 'xn--y9a3aq.xn--y9a3aq', inbox_url: 'http://example.com/inbox') }
-      let(:status) { Fabricate(:status, account: account, text: "Hello @foo@հայ.հայ") }
+      let(:status) { Fabricate(:status, account: account, text: 'Hello @foo@հայ.հայ') }
 
       before do
         stub_request(:post, remote_user.inbox_url)

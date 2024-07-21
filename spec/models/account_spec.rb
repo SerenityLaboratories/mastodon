@@ -772,8 +772,8 @@ RSpec.describe Account do
         expect(account).to model_have_error_on_field(:display_name)
       end
 
-      it 'is invalid if the note is longer than 1000 characters' do
-        account = Fabricate.build(:account, note: Faker::Lorem.characters(number: 1001))
+      it 'is invalid if the note is longer than 1500 characters' do
+        account = Fabricate.build(:account, note: Faker::Lorem.characters(number: 1501))
         account.valid?
         expect(account).to model_have_error_on_field(:note)
       end

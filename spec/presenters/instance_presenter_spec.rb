@@ -109,7 +109,7 @@ describe InstancePresenter do
       end
 
       it 'defaults to the core mastodon repo URL' do
-        expect(instance_presenter.source_url).to eq('https://github.com/serenitylaboratories/mastodon')
+        expect(instance_presenter.source_url).to eq('https://github.com/SerenityLaboratories/mastodon')
       end
     end
   end

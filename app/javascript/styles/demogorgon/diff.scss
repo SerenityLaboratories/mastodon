@@ -46,38 +46,9 @@ body.no-reduce-motion div.columns-area__panels {
   background: rgba(0, 0, 0, 50%);
 }
 
-div[aria-label='Home'] {
+.column {
   padding: 0;
-  box-shadow: 0 0 10px darken($ui-highlight-color, 20%);
-}
-
-div[aria-label='Notifications'] {
-  padding: 0;
-  box-shadow: 0 0 10px darken($ui-highlight-color, 20%);
-}
-
-div[aria-label='Local timeline'] {
-  padding: 0;
-  box-shadow: 0 0 10px darken($ui-highlight-color, 20%);
-}
-
-div[aria-label='Federated timeline'] {
-  padding: 0;
-  box-shadow: 0 0 10px darken($ui-highlight-color, 20%);
-}
-
-div[aria-label='Direct messages'] {
-  padding: 0;
-  box-shadow: 0 0 10px darken($ui-highlight-color, 20%);
-}
-
-div[aria-label='Favourites'] {
-  padding: 0;
-  box-shadow: 0 0 10px darken($ui-highlight-color, 20%);
-}
-
-div[aria-label='List'] {
-  padding: 0;
+  margin: 10px;
   box-shadow: 0 0 10px darken($ui-highlight-color, 20%);
 }
 
@@ -91,43 +62,23 @@ div[aria-label='List'] {
 }
 
 div.columns-area--mobile > div.column {
+  padding: 0;
+  box-shadow: 0 0 10px darken($ui-highlight-color, 20%);
   width: 95%;
-  height: 98%;
+  height: auto;
+  margin: 2.5%;
 }
 
 @media screen and (width >= 631px) {
-  div[aria-label='Home'] {
-    margin: 10px;
-  }
-
-  div[aria-label='Notifications'] {
-    margin: 10px;
-  }
-
-  div[aria-label='Local timeline'] {
-    margin: 10px;
-  }
-
-  div[aria-label='Federated timeline'] {
-    margin: 10px;
-  }
-
-  div[aria-label='Direct messages'] {
-    margin: 10px;
-  }
-
-  div[aria-label='Favourites'] {
-    margin: 10px;
-  }
-
-  div[aria-label='List'] {
-    margin: 10px;
+  .column:last-child {
+    padding-inline-end: 0;
   }
 }
 
 @media screen and (width <= 630px) {
   .column {
     width: 90%;
+    margin: 10px;
     margin-left: auto;
     margin-right: auto;
   }

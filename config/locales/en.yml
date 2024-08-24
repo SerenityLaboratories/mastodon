@@ -1736,19 +1736,18 @@ en:
   tags:
     does_not_match_previous_name: does not match the previous name
   themes:
+    chillstep: Chillstep (radical.town)
     contrast: Mastodon (High contrast)
     default: Mastodon (Dark)
-    mastodon-light: Mastodon (Light)
-    glitchy-witchy: Glitchy Witchy (witches.live)
-    synthwave: Synthwave (radical.town)
     demogorgon: Demogorgon (radical.town)
-    chillstep: Chillstep (radical.town)
+    glitchy-witchy: Glitchy Witchy (witches.live)
     mastodon-autumn: Autumn (is.nota.live)
-    mastodon-winter: Winter (is.nota.live)
+    mastodon-black: Black (is.nota.live)
+    mastodon-light: Mastodon (Light)
     mastodon-spring: Spring (is.nota.live)
     mastodon-summer: Summer (is.nota.live)
-    mastodon-black: Black (is.nota.live)
-
+    mastodon-winter: Winter (is.nota.live)
+    synthwave: Synthwave (radical.town)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

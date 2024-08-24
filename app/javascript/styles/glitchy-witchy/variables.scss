@@ -14,7 +14,10 @@ $ui-button-focus-outline: solid 2px $ui-button-focus-outline-color !default;
 
 $ui-button-tertiary-color: lighten($ui-glitchy-pink, 12%) !default;
 $ui-button-tertiary-border-color: lighten($ui-glitchy-pink, 12%) !default;
-$ui-button-tertiary-focus-background-color: darken($ui-glitchy-pink, 8%) !default;
+$ui-button-tertiary-focus-background-color: darken(
+  $ui-glitchy-pink,
+  8%
+) !default;
 $ui-button-tertiary-focus-color: $white !default;
 
 $ui-base-color: $ui-glitchy-bg;

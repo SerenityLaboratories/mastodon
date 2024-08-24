@@ -4,16 +4,16 @@ li.selected li.selected a.selected,
 .actions button,
 .input-copy button,
 .admin-wrapper .sidebar ul .simple-navigation-active-leaf a {
-  color: #000!important;
+  color: #000 !important;
 }
 
 .button.button.button-secondary {
-  color: #fff!important;
-  background: #000!important;
+  color: #fff !important;
+  background: #000 !important;
 }
 
 .button.logo-button {
-  background: #fff
+  background: #fff;
 }
 
 .button.logo-button svg {
@@ -24,52 +24,52 @@ li.selected li.selected a.selected,
   background: #141414;
 }
 
-.drawer__inner, .drawer__inner__mastodon {
+.drawer__inner,
+.drawer__inner__mastodon {
   background: #000;
 }
 
 .compose-form__publish-button-wrapper .button {
-  color: #fff!important;
+  color: #fff !important;
   background: #000;
-  border: 1px solid #fff!important;
+  border: 1px solid #fff !important;
 }
 
 .compose-form__publish-button-wrapper .button:hover {
-  color: #000!important;
+  color: #000 !important;
   background: #fff;
 }
 
 .icon-with-badge__badge {
-  color: #000!important;
+  color: #000 !important;
 }
 
-.simple_form input[type="email"],
-.simple_form input[type="number"],
-.simple_form input[type="password"],
-.simple_form input[type="text"],
+.simple_form input[type='email'],
+.simple_form input[type='number'],
+.simple_form input[type='password'],
+.simple_form input[type='text'],
 .simple_form textarea {
   border-bottom: 1px solid #fff;
   border-radius: 0;
 }
 
-.simple_form input[type="email"]:hover,
-.simple_form input[type="number"]:hover,
-.simple_form input[type="password"]:hover,
-.simple_form input[type="text"]:hover,
+.simple_form input[type='email']:hover,
+.simple_form input[type='number']:hover,
+.simple_form input[type='password']:hover,
+.simple_form input[type='text']:hover,
 .simple_form textarea:hover {
   border-bottom: 1px solid #e0e0e0;
 }
 
-.simple_form input[type="email"]:focus,
-.simple_form input[type="number"]:focus,
-.simple_form input[type="password"]:focus,
-.simple_form input[type="text"]:focus,
+.simple_form input[type='email']:focus,
+.simple_form input[type='number']:focus,
+.simple_form input[type='password']:focus,
+.simple_form input[type='text']:focus,
 .simple_form textarea:focus {
   border-radius: 4px;
 }
 
 .modal-root .button:not(.confirmation-modal__cancel-button) {
-  background: #000!important;
-  color: #fff!important;
+  background: #000 !important;
+  color: #fff !important;
 }
-

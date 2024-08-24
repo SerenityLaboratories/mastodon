@@ -8,8 +8,8 @@ $blurple-300: #dcf6f0;
 
 $classic-base-color: #404040;
 $classic-primary-color: darken(#f0e89b, 10%);
-$classic-secondary-color: #ffeab2; //main color, background and shit
-$classic-highlight-color: #ff0000; //accent color
+$classic-secondary-color: #ffeab2; // main color, background and shit
+$classic-highlight-color: #ff0000; // accent color
 
 $ui-button-color: $black !default;
 $ui-button-background-color: $blurple-500 !default;
@@ -44,10 +44,10 @@ $inverted-text-color: $black !default;
 $lighter-text-color: darken($classic-base-color, 10%) !default;
 $light-text-color: #385076;
 
-//Newly added colors
+// Newly added colors
 $account-background-color: $white !default;
 
-//Invert darkened and lightened colors
+// Invert darkened and lightened colors
 @function darken($color, $amount) {
   @return hsl(hue($color), saturation($color), lightness($color) + $amount);
 }

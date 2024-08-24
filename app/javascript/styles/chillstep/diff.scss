@@ -1,52 +1,53 @@
 body {
-    font-family: 'lato-sans-serif', 'mastodon-font-sans-serif', sans-serif;
-    font-size: 16px;
+  font-family: lato-sans-serif, mastodon-font-sans-serif, sans-serif;
+  font-size: 16px;
 }
 
 .getting-started__footer {
-    line-height: 1.4em;
+  line-height: 1.4em;
 }
 
 .drawer__header {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .search {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 24px;
 }
 
 .drawer {
-    padding: 0;
+  padding: 0;
 }
 
 .drawer:first-child {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 .column {
-    padding: 0;
+  padding: 0;
 }
 
 .status__wrapper {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .modal-layout__mastodon {
-    > * {
-      background: url('../images/radical_town_scale_title.svg') no-repeat left bottom / contain;
-    }
+  > * {
+    background: url('../images/radical_town_scale_title.svg') no-repeat left
+      bottom / contain;
+  }
 }
 
 .media-modal__nav {
-    color: $ui-highlight-color;
+  color: $ui-highlight-color;
 }
 
 .poll__chart {
-    background: $dark-text-color;
+  background: $dark-text-color;
 }
 
 .columns-area__panels {
-    background-color: #151515;
+  background-color: #151515;
 }

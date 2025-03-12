@@ -3,8 +3,28 @@ li.selected li.selected a.selected,
 .button,
 .actions button,
 .input-copy button,
+.dropdown-button.active,
 .admin-wrapper .sidebar ul .simple-navigation-active-leaf a {
   color: #000 !important;
+  background: #aaa;
+}
+
+.privacy-dropdown__option.active {
+  color: #000 !important;
+  background: #aaa;
+
+  > .privacy-dropdown__option__content strong {
+    color: #000 !important;
+  }
+
+  > .privacy-dropdown__option__content {
+    color: #000 !important;
+  }
+}
+
+.button.button.button-secondary {
+  color: #fff !important;
+  background: #000 !important;
 }
 
 .button.button.button-secondary {
@@ -20,28 +40,25 @@ li.selected li.selected a.selected,
   fill: #000;
 }
 
-.search__input {
-  background: #141414;
-}
-
-.drawer__inner,
-.drawer__inner__mastodon {
-  background: #000;
-}
-
-.compose-form__publish-button-wrapper .button {
+.compose-form__submit .button {
   color: #fff !important;
   background: #000;
   border: 1px solid #fff !important;
+  transition: 0.1s;
 }
 
-.compose-form__publish-button-wrapper .button:hover {
+.compose-form__submit .button:hover {
   color: #000 !important;
   background: #fff;
+  border: 1px transparent !important;
 }
 
 .icon-with-badge__badge {
   color: #000 !important;
+}
+
+.react-toggle-track {
+  background-color: #444;
 }
 
 .simple_form input[type='email'],
@@ -66,10 +83,15 @@ li.selected li.selected a.selected,
 .simple_form input[type='password']:focus,
 .simple_form input[type='text']:focus,
 .simple_form textarea:focus {
+  border: 1px solid #fff !important;
   border-radius: 4px;
 }
 
 .modal-root .button:not(.confirmation-modal__cancel-button) {
   background: #000 !important;
   color: #fff !important;
+}
+
+.switch-to-advanced {
+  color: #aaa;
 }

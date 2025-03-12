@@ -1,6 +1,6 @@
 // Dependent colors
 $black: #000000;
-$white: #aaaaaa;
+$white: #ffeab2;
 $blurple-600: #b2d8cf;
 $blurple-500: #c6f1e7;
 $blurple-400: #d1f3eb;
@@ -45,7 +45,7 @@ $lighter-text-color: darken($classic-base-color, 10%) !default;
 $light-text-color: #385076;
 
 // Newly added colors
-$account-background-color: $white !default;
+$account-background-color: $ui-base-color !default;
 
 // Invert darkened and lightened colors
 @function darken($color, $amount) {

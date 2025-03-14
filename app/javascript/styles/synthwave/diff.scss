@@ -7,34 +7,25 @@ body {
   background: $black;
 }
 
-.column {
-  padding: 0;
-}
-
-.drawer {
-  padding: 0;
-}
-
 @media screen and (width >= 631px) {
   .drawer:first-child {
     padding: 0;
   }
 }
 
-.scrollable {
+.column-header,
+.column-back-button,
+.tabs-bar__portal {
+  border-top: 1px transparent;
   border-left: 1px solid rgb(255, 66, 224);
   border-right: 1px solid rgb(177, 11, 66);
-  border-bottom: 1px solid rgb(116, 66, 255);
-}
-
-.tabs-bar {
   background: linear-gradient(
     160deg,
-    cb32d3 1%,
-    ffc13b 29%,
-    e2aa4f 39%,
-    fc074c 100%
-  );
+    #cb32d3 1%,
+    #ffc13b 29%,
+    #e2aa4f 39%,
+    #fc074c 100%
+  ) !important;
   background-color: rgb(255, 193, 59);
 
   > .active {
@@ -46,40 +37,157 @@ body {
   color: $ui-highlight-color;
 }
 
-.column-header {
-  color: $black;
-  background: rgb(255, 235, 119);
-  font-size: 20px;
-  font-style: italic;
-  border-bottom: 10px solid rgb(255, 66, 129);
-  box-shadow: 0 0 10px $ui-primary-color;
-
-  > button {
-    text-shadow: 0 0 2px $ui-primary-color;
-    padding-bottom: 0;
-    margin-bottom: 10px;
-  }
-}
-
-.drawer__header {
-  background: $ui-primary-color;
-  text-shadow: 0 0 6px $white;
-  box-shadow: 0 0 10px rgb(255, 227, 66);
-}
-
-.drawer__tab {
-  color: $white;
-}
-
-.column-header__button {
-  color: $black;
-  background: lighten($ui-primary-color, 10%);
-}
-
 .compose-form__publish-button {
   text-shadow: 0 0 6px $white;
 }
 
-.button {
+.btn,
+.button,
+.dropdown-button.active,
+.privacy-dropdown__option.active,
+.language-dropdown__dropdown__results__item.active {
   text-shadow: 0 0 4px rgb(255, 235, 119);
+}
+
+.column {
+  padding: 0;
+
+  > .scrollable {
+    background: $ui-base-color;
+    border-left: 1px solid rgb(255, 66, 224);
+    border-right: 1px solid rgb(177, 11, 66);
+    border-bottom: 1px solid rgb(116, 66, 255);
+  }
+
+  .account__header {
+    background: lighten($ui-base-color, 4%);
+
+    &__fields {
+      background: darken($ui-base-color, 4%);
+    }
+  }
+
+  &-back-button,
+  &-header {
+    color: $black;
+    font-size: 20px;
+    font-style: italic;
+    box-shadow:
+      0 -5px 20px -5px $ui-primary-color,
+      0 5px 20px -5px $ui-primary-color;
+
+    &__back-button {
+      font-style: italic;
+      color: $black !important;
+      text-shadow: 0 0 2px $ui-primary-color !important;
+    }
+
+    button {
+      font-style: italic;
+      color: $black;
+      text-shadow: 0 0 2px $ui-primary-color !important;
+    }
+
+    &__collapsible {
+      background: lighten($ui-base-color, 8%);
+    }
+  }
+}
+
+.drawer {
+  padding: 0;
+  overflow: visible;
+
+  &__header {
+    background: lighten($ui-base-color, 8%);
+    background: $ui-primary-color;
+    text-shadow: 0 0 6px $white;
+    box-shadow: 0 0 10px rgb(255, 227, 66);
+    border-radius: 2px;
+    margin-bottom: 5px;
+  }
+
+  &__pager {
+    border-radius: 2px;
+  }
+
+  &__tab {
+    filter: drop-shadow(0 0 6px $white);
+    color: $white;
+  }
+
+  &__inner {
+    background: lighten($ui-base-color, 13%);
+  }
+
+  &__inner__mastodon {
+    background: lighten($ui-base-color, 13%)
+      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 234.80078 31.757813" width="234.80078" height="31.757812"><path d="M19.599609 0c-1.05 0-2.10039.375-2.90039 1.125L0 16.925781v14.832031h234.80078V17.025391l-16.5-15.900391c-1.6-1.5-4.20078-1.5-5.80078 0l-13.80078 13.099609c-1.6 1.5-4.19883 1.5-5.79883 0L179.09961 1.125c-1.6-1.5-4.19883-1.5-5.79883 0L159.5 14.224609c-1.6 1.5-4.20078 1.5-5.80078 0L139.90039 1.125c-1.6-1.5-4.20078-1.5-5.80078 0l-13.79883 13.099609c-1.6 1.5-4.20078 1.5-5.80078 0L100.69922 1.125c-1.600001-1.5-4.198829-1.5-5.798829 0l-13.59961 13.099609c-1.6 1.5-4.200781 1.5-5.800781 0L61.699219 1.125c-1.6-1.5-4.198828-1.5-5.798828 0L42.099609 14.224609c-1.6 1.5-4.198828 1.5-5.798828 0L22.5 1.125C21.7.375 20.649609 0 19.599609 0z" fill="%231A1E25"/></svg>')
+      no-repeat bottom/100% auto;
+  }
+
+  .search {
+    border-radius: 2px;
+    margin-bottom: 0;
+  }
+}
+
+.notification__filter-bar,
+.account__section-headline {
+  border-left: 1px solid rgb(255, 66, 224);
+  border-right: 1px solid rgb(177, 11, 66);
+  background: $ui-base-color;
+}
+
+.content-wrapper,
+.sidebar-wrapper--empty {
+  background: $ui-base-color;
+}
+
+.about {
+  &__section__title {
+    background: lighten($ui-base-color, 4%);
+  }
+
+  &__meta {
+    background: lighten($ui-base-color, 4%);
+  }
+
+  &__footer {
+    color: $darker-text-color;
+  }
+}
+
+.switch-to-advanced {
+  color: $darker-text-color;
+}
+
+.compose-form {
+  .spoiler-input {
+    &__border {
+      width: 0;
+    }
+
+    &__input {
+      padding: 12px;
+    }
+  }
+}
+
+.simple_form {
+  select,
+  textarea,
+  input[type]:not([type='hidden']) {
+    background: darken($ui-base-color, 8%);
+  }
+}
+
+.react-toggle {
+  &:hover:not(.react-toggle--disabled) &-track {
+    background: lighten($ui-base-color, 6%);
+  }
+
+  &-track {
+    background: $ui-base-color;
+  }
 }

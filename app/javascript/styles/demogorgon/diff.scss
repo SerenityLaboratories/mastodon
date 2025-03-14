@@ -42,25 +42,6 @@ body.no-reduce-motion div.columns-area__panels {
   animation-direction: alternate;
 }
 
-.compose-panel {
-  background: rgba(0, 0, 0, 50%);
-}
-
-.column {
-  padding: 0;
-  margin: 10px;
-  box-shadow: 0 0 10px darken($ui-highlight-color, 20%);
-}
-
-.column-header {
-  font-family: Benguiat, serif;
-  text-transform: uppercase;
-  font-size: 18pt;
-  color: $black;
-  text-shadow: 1px 1px 8px $ui-highlight-color;
-  -webkit-text-stroke: 0.02em $ui-highlight-color;
-}
-
 div.columns-area--mobile > div.column {
   padding: 0;
   box-shadow: 0 0 10px darken($ui-highlight-color, 20%);
@@ -81,5 +62,109 @@ div.columns-area--mobile > div.column {
     margin: 10px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+.column {
+  padding: 0;
+  margin: 10px;
+  box-shadow: 0 0 10px darken($ui-highlight-color, 20%);
+
+  > .scrollable {
+    background: $ui-base-color;
+  }
+
+  .account__header {
+    background: lighten($ui-base-color, 4%);
+
+    &__fields {
+      background: darken($ui-base-color, 4%);
+    }
+  }
+
+  &-back-button,
+  &-header {
+    background: lighten($ui-base-color, 4%);
+
+    &__title {
+      font-family: Benguiat, serif;
+      text-transform: uppercase;
+      font-size: 18pt;
+      color: $black;
+      text-shadow: 1px 1px 8px $ui-highlight-color;
+      -webkit-text-stroke: 0.02em $ui-highlight-color;
+    }
+
+    &__collapsible {
+      background: lighten($ui-base-color, 8%);
+    }
+
+    svg {
+      color: $ui-secondary-color;
+    }
+  }
+
+  &-back-button {
+    font-family: Benguiat, serif;
+    text-transform: uppercase;
+    font-size: 18pt;
+    color: $black;
+    text-shadow: 1px 1px 8px $ui-highlight-color;
+    -webkit-text-stroke: 0.02em $ui-highlight-color;
+  }
+}
+
+.drawer {
+  &__header {
+    background: lighten($ui-base-color, 8%);
+  }
+
+  &__pager {
+    background: rgba(0, 0, 0, 50%);
+  }
+}
+
+.notification__filter-bar,
+.account__section-headline,
+.content-wrapper,
+.sidebar-wrapper--empty {
+  background: $ui-base-color;
+}
+
+.about {
+  &__section__title {
+    background: lighten($ui-base-color, 4%);
+  }
+
+  &__meta {
+    background: lighten($ui-base-color, 4%);
+  }
+
+  &__footer {
+    color: $darker-text-color;
+  }
+}
+
+.switch-to-advanced {
+  color: $darker-text-color;
+}
+
+.compose-form {
+  .spoiler-input {
+    &__border {
+      width: 0;
+    }
+
+    &__input {
+      padding: 12px;
+    }
+  }
+}
+
+.simple_form {
+  select,
+  textarea,
+  input[type] {
+    background: lighten($ui-base-color, 8%);
   }
 }

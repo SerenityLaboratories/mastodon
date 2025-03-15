@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class PollValidator < ActiveModel::Validator
+class PollOptionsValidator < ActiveModel::Validator
   MAX_OPTIONS      = 10
   MAX_OPTION_CHARS = 100
 

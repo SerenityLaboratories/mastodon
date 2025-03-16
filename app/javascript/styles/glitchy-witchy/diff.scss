@@ -127,3 +127,7 @@
     background: darken($ui-base-color, 8%);
   }
 }
+
+:root {
+  --background-color: #{darken($ui-glitchy-bg, 7%)};
+}

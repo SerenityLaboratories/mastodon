@@ -1,6 +1,9 @@
+@use 'sass:color';
+@use '../mastodon/functions' as *;
+
 // Dependent colors
-$black: #000000;
-$white: #ffffff;
+$black: #000;
+$white: #fff;
 $blurple-500: #4b85ac;
 $blurple-600: darken($blurple-500, 8%);
 $blurple-400: lighten($blurple-500, 8%);
@@ -8,7 +11,7 @@ $blurple-300: lighten($blurple-500, 12%);
 
 $classic-base-color: #dadada;
 $classic-primary-color: #303030;
-$classic-secondary-color: #222222;
+$classic-secondary-color: #222;
 $classic-highlight-color: #cc7dcc;
 
 $ui-button-background-color: $blurple-500 !default;
@@ -41,3 +44,36 @@ $action-button-color: #74b8c4;
 $inverted-text-color: #597264 !default;
 $lighter-text-color: #594461 !default;
 $light-text-color: #444b5d;
+
+@use '../mastodon/variables' with (
+  $ui-button-background-color: $blurple-500,
+  $ui-button-focus-background-color: $blurple-600,
+  $ui-button-focus-outline-color: $blurple-400,
+  $ui-button-focus-outline: solid 2px $ui-button-focus-outline-color,
+
+  $ui-button-tertiary-color: $blurple-300,
+  $ui-button-tertiary-border-color: $blurple-300,
+  $ui-button-tertiary-focus-background-color: $blurple-600,
+  $ui-button-tertiary-focus-color: $white,
+
+  // Differences
+  $success-green: #3c754d,
+
+  $base-overlay-background: $white,
+  $valid-value-color: $success-green,
+
+  $ui-base-color: $classic-secondary-color,
+  $ui-base-lighter-color: #b0c0cf,
+  $ui-primary-color: #fce6f5,
+  $ui-secondary-color: $classic-base-color,
+  $ui-highlight-color: #4b85ac,
+
+  $primary-text-color: #d0dadd,
+  $darker-text-color: #c8bccf,
+  $dark-text-color: #867ab9,
+  $action-button-color: #74b8c4,
+
+  $inverted-text-color: #597264,
+  $lighter-text-color: #594461,
+  $light-text-color: #444b5d
+);

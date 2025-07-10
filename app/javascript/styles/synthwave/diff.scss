@@ -1,3 +1,6 @@
+@use '../mastodon/variables' as *;
+@use '../mastodon/functions' as *;
+
 body {
   font-family: lato-sans-serif, mastodon-font-sans-serif, sans-serif;
   font-size: 16px;
@@ -7,7 +10,7 @@ body {
   background: $black;
 }
 
-@media screen and (width >= 631px) {
+@media screen and (width > $mobile-breakpoint) {
   .drawer:first-child {
     padding: 0;
   }
@@ -50,9 +53,18 @@ body {
 }
 
 .column {
+  @media screen and (width > $mobile-breakpoint) {
+    &:last-child {
+      border-left: 1px solid rgb(255, 66, 224);
+      border-right: 1px solid rgb(177, 11, 66);
+      border-bottom: 1px solid rgb(116, 66, 255);
+      background: $ui-base-color;
+    }
+  }
+
   padding: 0;
 
-  > .scrollable {
+  > .scrollable:not(:has(.compose-form)) {
     background: $ui-base-color;
     border-left: 1px solid rgb(255, 66, 224);
     border-right: 1px solid rgb(177, 11, 66);
@@ -65,6 +77,11 @@ body {
     &__fields {
       background: darken($ui-base-color, 4%);
     }
+  }
+
+  .explore__search-header {
+    padding: 0;
+    padding-bottom: 0;
   }
 
   &-back-button,

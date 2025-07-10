@@ -1,25 +1,17 @@
-div.ui {
-  background: rgb(21, 21, 25);
-  background: url('../images/ashes.png'),
-    linear-gradient(
-      180deg,
-      rgba(21, 21, 25, 100%) 17%,
-      rgb(20, 38, 46) 44%,
-      rgba(32, 41, 43, 100%) 74%,
-      rgba(25, 30, 36, 100%) 100%
-    );
-  background-blend-mode: soft-light, normal;
-  background-repeat: repeat, no-repeat;
+@use '../mastodon/variables' as *;
+@use '../mastodon/functions' as *;
+@keyframes ashes {
+  from {
+    background-position: 0% 0%;
+  }
+
+  to {
+    background-position: 50% 100%;
+  }
 }
 
-div.ui {
-  animation-name: ashes;
-  animation-duration: 120s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  animation-direction: alternate;
-}
-
+div.ui,
+.tabs-bar__wrapper,
 .columns-area__panels {
   background: rgb(21, 21, 25);
   background: url('../images/ashes.png'),
@@ -32,8 +24,11 @@ div.ui {
     );
   background-blend-mode: soft-light, normal;
   background-repeat: repeat, no-repeat;
+  background-attachment: fixed;
 }
 
+div.ui,
+.tabs-bar__wrapper,
 body.no-reduce-motion div.columns-area__panels {
   animation-name: ashes;
   animation-duration: 120s;
@@ -50,13 +45,14 @@ div.columns-area--mobile > div.column {
   margin: 2.5%;
 }
 
-@media screen and (width >= 631px) {
+@media screen and (width > $mobile-breakpoint) {
   .column:last-child {
     padding-inline-end: 0;
+    background: $ui-base-color;
   }
 }
 
-@media screen and (width <= 630px) {
+@media screen and (width < $mobile-breakpoint) {
   .column {
     width: 90%;
     margin: 10px;
@@ -70,7 +66,7 @@ div.columns-area--mobile > div.column {
   margin: 10px;
   box-shadow: 0 0 10px darken($ui-highlight-color, 20%);
 
-  > .scrollable {
+  > .scrollable:not(:has(.compose-form)) {
     background: $ui-base-color;
   }
 
@@ -101,6 +97,14 @@ div.columns-area--mobile > div.column {
 
     svg {
       color: $ui-secondary-color;
+    }
+  }
+
+  > .explore__search-header {
+    padding: 0;
+
+    .search__input {
+      border-radius: unset;
     }
   }
 

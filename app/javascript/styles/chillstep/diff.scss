@@ -1,3 +1,6 @@
+@use '../mastodon/variables' as *;
+@use '../mastodon/functions' as *;
+
 body {
   font-family: lato-sans-serif, mastodon-font-sans-serif, sans-serif;
   font-size: 16px;
@@ -45,9 +48,15 @@ body {
 .column {
   padding: 0;
 
-  > .scrollable {
+  > .scrollable:not(:has(.compose-form)) {
     border: 0;
     background: $ui-base-color;
+  }
+
+  @media screen and (width > $mobile-breakpoint) {
+    &:last-child {
+      background: $ui-base-color;
+    }
   }
 
   .account__header {
@@ -133,7 +142,7 @@ body {
 }
 
 .react-toggle {
-  &:hover:not(.react-toggle--disabled) &-track {
+  &:hover:not(&--disabled) &-track {
     background: lighten($ui-base-color, 6%);
   }
 

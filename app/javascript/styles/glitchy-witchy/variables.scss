@@ -5,7 +5,8 @@ $ui-glitchy-brightest: #f993fa;
 $ui-glitchy-purple: #f993fa;
 $ui-glitchy-blue: #5849ce;
 $ui-glitchy-pink: #ff42a0;
-$white: #ffffff;
+$white: #fff;
+$black: #000;
 
 $ui-button-background-color: $ui-glitchy-pink !default;
 $ui-button-focus-background-color: darken($ui-glitchy-pink, 8%) !default;
@@ -26,3 +27,32 @@ $ui-primary-color: $ui-glitchy-purple;
 $ui-secondary-color: $ui-glitchy-purple;
 $ui-bright-color: $ui-glitchy-pink;
 $ui-highlight-color: $ui-glitchy-pink;
+$ui-bright-color: $ui-glitchy-pink;
+$darker-text-color: $ui-glitchy-purple;
+$dark-text-color: $ui-glitchy-purple;
+$secondary-text-color: $ui-glitchy-purple;
+$highlight-text-color: $ui-glitchy-pink;
+
+$inverted-text-color: $black;
+$lighter-text-color: $ui-glitchy-bg;
+$light-text-color: $ui-glitchy-purple;
+
+@use '../mastodon/variables' with (
+  $ui-button-background-color: $ui-glitchy-pink,
+  $ui-button-focus-background-color: #{darken($ui-glitchy-pink, 8%)},
+  $ui-button-focus-outline-color: #{lighten($ui-glitchy-pink, 8%)},
+  $ui-button-focus-outline: solid 2px $ui-button-focus-outline-color,
+
+  $ui-button-tertiary-color: #{lighten($ui-glitchy-pink, 12%)},
+  $ui-button-tertiary-border-color: #{lighten($ui-glitchy-pink, 12%)},
+  $ui-button-tertiary-focus-background-color: #{darken($ui-glitchy-pink, 8%)},
+  $ui-button-tertiary-focus-color: $white,
+
+  $ui-base-color: $ui-glitchy-bg,
+  $ui-base-lighter-color: $ui-glitchy-purple,
+  $ui-primary-color: $ui-glitchy-purple,
+  $ui-secondary-color: $ui-glitchy-purple,
+  $ui-highlight-color: $ui-glitchy-pink,
+
+  $inverted-text-color: $black
+);

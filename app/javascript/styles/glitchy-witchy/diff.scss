@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use '../mastodon/functions' as *;
+
 .character-counter {
   color: lighten($ui-glitchy-blue, 16%);
 }
@@ -57,8 +60,16 @@
 }
 
 .column {
-  > .scrollable {
+  > .scrollable:not(:has(.compose-form)) {
     background: $ui-base-color;
+  }
+
+  > .explore__search-header {
+    padding: 0;
+
+    .search__input {
+      border-radius: unset;
+    }
   }
 
   .account__header {
@@ -95,6 +106,21 @@
   }
 }
 
+.notification-bar {
+  &-action {
+    color: $ui-highlight-color;
+  }
+}
+
+.hover-card {
+  background: darken($ui-base-color, 8%);
+}
+
+.account__avatar {
+  background: none;
+  border: 0;
+}
+
 .notification__filter-bar,
 .account__section-headline,
 .content-wrapper,
@@ -120,12 +146,34 @@
   color: $darker-text-color;
 }
 
+.react-toggle {
+  &--checked &-track {
+    background-color: $ui-highlight-color;
+  }
+
+  &:hover:not(&--disabled) &-track {
+    background: darken($ui-highlight-color, 15%);
+  }
+
+  &.react-toggle--checked:hover:not(&--disabled) &-track {
+    background: lighten($ui-highlight-color, 10%);
+  }
+
+  &-track {
+    background: $ui-base-color;
+  }
+}
+
 .simple_form {
   select,
   textarea,
   input[type]:not([type='hidden']) {
     background: darken($ui-base-color, 8%);
   }
+}
+
+.dashboard__quick-access {
+  color: $lighter-text-color;
 }
 
 :root {

@@ -634,6 +634,10 @@
     padding: 15px;
   }
 
+  &__footer &__dropdowns {
+    margin: 0;
+  }
+
   &__highlightable {
     display: flex;
     flex-direction: column;

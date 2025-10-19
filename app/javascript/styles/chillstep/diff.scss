@@ -21,7 +21,7 @@ body {
 
 .modal-layout__mastodon {
   > * {
-    background: url('../images/radical_town_scale_title.svg') no-repeat left
+    background: url('@/images/radical_town_scale_title.svg') no-repeat left
       bottom / contain;
   }
 }

@@ -14,7 +14,8 @@ div.ui,
 .tabs-bar__wrapper,
 .columns-area__panels {
   background: rgb(21, 21, 25);
-  background: url('../images/ashes.png'),
+  background:
+    url('@/images/ashes.png'),
     linear-gradient(
       180deg,
       rgba(21, 21, 25, 100%) 17%,

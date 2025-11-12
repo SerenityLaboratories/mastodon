@@ -57,3 +57,8 @@ $ui-base-color: $classic-secondary-color;
   $lighter-text-color: darken($classic-base-color, 10%),
   $light-text-color: #385076
 );
+
+body {
+  --dropdown-background-color: var(--background-color);
+  --modal-background-color: var(--dropdown-background-color);
+}

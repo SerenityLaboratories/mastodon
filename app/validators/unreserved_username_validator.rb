@@ -12,7 +12,13 @@ class UnreservedUsernameValidator < ActiveModel::Validator
   private
 
   def reserved_username?
-    pam_username_reserved? || settings_username_reserved?
+    configured_prefix_reserved? || pam_username_reserved? || settings_username_reserved?
+  end
+
+  def configured_prefix_reserved?
+    prefixes = ENV.fetch('USERNAME_BLOCKED_PREFIXES', '').downcase.split(',').map(&:strip).reject(&:empty?)
+
+    @username.downcase.start_with?(*prefixes)
   end
 
   def pam_username_reserved?
